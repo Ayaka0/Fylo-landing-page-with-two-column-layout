@@ -6,7 +6,6 @@
 }
 
 body {
-  padding: 3em;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -21,6 +20,7 @@ header {
   flex-wrap: wrap;
   font-family: "Raleway", sans-serif;
   background-color: blueviolet;
+  padding: 3em 3em 0 3em;
 }
 
 .navbar ul {
@@ -47,7 +47,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 5em 0;
+  margin: 5em 0 5em 0;
+  padding: 3em;
 }
 
 h1 {
@@ -71,6 +72,112 @@ p {
 
 #email {
   width: 50%;
-  height: 30px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.pri_btn {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0.8em 3.5em;
+  background-color: hsl(224, 93%, 58%);
+  color: #eee;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  padding-left: 2em;
 }
 /* END PRIMARY */
+
+/* START SECONDARY */
+/*
+.secondary::before {
+  content: " ";
+  background: url(images/bg-curve-desktop.svg) no-repeat;
+  display: block;
+  top: 0;
+  left: 0;
+}
+*/
+.secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(240, 75%, 98%);
+  padding: 0em 3em 3em 3em;
+  margin-top: 0;
+}
+
+.curve_pic {
+  transform: translateY(-60px);
+  width: 200%;
+  background-color: transparent;
+}
+
+.sec_pict {
+  width: 50%;
+  height: 50%;
+  margin-top: 10em;
+}
+
+.link {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.link::after {
+  content: url(images/icon-arrow.svg);
+}
+
+.quote {
+  margin: 30px 0;
+  max-width: 400px;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+}
+
+.quote::before {
+  content: url(images/icon-quotes.svg);
+  display: block;
+}
+
+.quote_pic > img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px 20px 0 0;
+}
+
+.quote_pic {
+  display: flex;
+}
+.quote_name {
+  flex: 1;
+}
+
+.quote_pic > p {
+  font-size: 0.9rem;
+}
+
+/*
+.quote_name::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(images/avatar-testimonial.jpg);
+  background-size: contain;
+  vertical-align: text-top;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+*/
+/* END SECONDARY */
