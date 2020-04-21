@@ -12,6 +12,10 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
 
@@ -64,7 +68,16 @@
     <!-- START SECONDARY SECTION-->
     <div class="secondary">
       <div class="sec_text">
-        <img class="curve_pic" src="images/bg-curve-desktop.svg" alt="curve" />
+        <img
+          class="curve_pic_desktop"
+          src="images/bg-curve-desktop.svg"
+          alt="curve"
+        />
+        <img
+          class="curve_pic_mobile"
+          src="images/bg-curve-mobile.svg"
+          alt="curve"
+        />
         <h1>
           Stay productive, wherever you are
         </h1>
@@ -95,22 +108,70 @@
     <!-- END SECONDARY SECTION-->
 
     <!-- START TERITARY SECTION-->
-    <div>
-      Get early access today It only takes a minute to sign up and our free
-      starter tier is extremely generous. If you have any questions, our support
-      team would be happy to help you. Get Started For Free
+    <div class="teritary">
+      <div class="teri_text">
+        <h1>Get early access today</h1>
+        <p>
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
+      </div>
+      <div class="email_box">
+        <input
+          type="email"
+          class="email2"
+          name="email"
+          placeholder="Enter your email.."
+        />
+        <a href="#" class="teri_btn">Get Started For Free</a>
+      </div>
     </div>
 
     <!-- END TERITARY SECTION-->
 
     <!-- START FOOTER-->
     <footer>
-      <footer>
-        <div>
-          phone: +1-543-123-4567 exmple@fylo.com About Us Jobs Press Blog
-          Contact Us Terms Privacy
+      <div class="fotter">
+        <div class="footer_logo">
+          <img src="images/logo.svg" alt="logo" />
         </div>
-      </footer>
+        <div class="footer_wrap_container">
+          <div class="wcont">
+            <ul>
+              <li>
+                <img src="images/icon-phone.svg" alt="phone" />
+                <a href="#">phone: +1-543-123-4567</a>
+              </li>
+              <li>
+                <img src="images/icon-email.svg" alt="email" /><a href="#"
+                  >exmple@fylo.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="wcont">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="wcont">
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="wcont">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- END FOOTER-->

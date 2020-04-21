@@ -9,9 +9,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.header_logo {
-  background-color: aqua;
-}
 /*  START HEADER */
 header {
   display: flex;
@@ -19,7 +16,6 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: "Raleway", sans-serif;
-  background-color: blueviolet;
   padding: 3em 3em 0 3em;
 }
 
@@ -94,15 +90,7 @@ input::placeholder {
 /* END PRIMARY */
 
 /* START SECONDARY */
-/*
-.secondary::before {
-  content: " ";
-  background: url(images/bg-curve-desktop.svg) no-repeat;
-  display: block;
-  top: 0;
-  left: 0;
-}
-*/
+
 .secondary {
   display: flex;
   flex-direction: row;
@@ -112,10 +100,17 @@ input::placeholder {
   margin-top: 0;
 }
 
-.curve_pic {
-  transform: translateY(-60px);
-  width: 200%;
-  background-color: transparent;
+.curve_pic_desktop {
+  max-width: 200%;
+  height: inherit;
+  margin: 0 auto;
+  margin-bottom: -30px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: relative;
+  z-index: -1;
+  transform: translateY(-30px);
 }
 
 .sec_pict {
@@ -167,17 +162,169 @@ input::placeholder {
   font-size: 0.9rem;
 }
 
-/*
-.quote_name::before {
-  content: "";
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-image: url(images/avatar-testimonial.jpg);
-  background-size: contain;
-  vertical-align: text-top;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-*/
 /* END SECONDARY */
+
+/* START TERITARY  */
+.teritary {
+  display: flex;
+  padding: 3em;
+  background-color: hsl(238, 22%, 44%);
+  color: #ffffff;
+}
+
+.teri_text {
+  width: 100%;
+  margin-right: 3em;
+}
+
+.email_box {
+  padding: 2em;
+  width: 100%;
+}
+
+.email2 {
+  height: 4em;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 1.5em;
+  width: 40em;
+}
+
+.teri_btn {
+  display: inline-block;
+  background-color: hsl(224, 93%, 58%);
+  color: #eee;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width: 20em;
+  text-align: center;
+  padding: 1em;
+  margin-left: 0;
+}
+
+/* END TERITARY  */
+
+/* START FOOTER */
+footer {
+  padding: 5em 3em;
+  background-color: hsl(243, 87%, 12%);
+}
+
+.footer_wrap_container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  line-height: 2.5em;
+}
+
+.footer_logo {
+  filter: brightness(0) invert(1);
+}
+
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+}
+
+a,
+i {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+i {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+/* END FOOTER */
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 1em;
+    flex-wrap: nowrap;
+  }
+  .navbar a {
+    padding: 0 0.5em;
+  }
+  .primary {
+    padding: 1em;
+    margin: 2em 0 3em 0;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .pri_pict {
+    width: 400px;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+
+  #email {
+    width: 100%;
+    height: 45px;
+  }
+
+  .pri_btn {
+    width: 100%;
+    margin: 1em auto;
+  }
+
+  .secondary {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sec_pict {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .sec_text h1 {
+    font-size: 1.4rem;
+  }
+
+  .curve_pic_desktop {
+    display: none;
+  }
+
+  .curve_pic_mobile {
+    position: absolute;
+    display: block;
+    width: 97%;
+    transform: translateY(-22em) translatex(-3em);
+    margin: 0 auto;
+  }
+  .teritary {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 auto;
+    text-align: center;
+  }
+
+  .teri_text {
+    font-size: 0.8rem;
+  }
+
+  .email2 {
+    width: 100%;
+  }
+
+  .teri_btn {
+    width: 100%;
+  }
+
+  .footer_wrap_container {
+    flex-direction: column;
+  }
+
+  i {
+    transform: translateX(100px);
+  }
+}
